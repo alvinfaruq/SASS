@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Pacifico&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@400;700&display=swap");
+body {
+  background-color: #dddddd;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #4169e1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+body.pink {
+  background-color: #dc51ac;
+  color: #000;
+}
+
+body.red {
+  background-color: #d64651;
+  color: #fff;
+}
+
+body.orange {
+  background-color: #e55937;
+  color: #deedee;
+}
+/*# sourceMappingURL=index.css.map */

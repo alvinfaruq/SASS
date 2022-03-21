@@ -1,0 +1,52 @@
+@import "color-palette.scss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Pacifico&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@400;700&display=swap');
+
+$font-stack: "Poppins", Arial, sans-serif;
+$primary-color: #333;
+
+body {
+    background-color: $myGrey;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 18px;
+    color: $myBlue;
+}
+
+$themeColours: (
+    "pink": #dc51ac,
+    "red": #d64651,
+    "orange": #e55937,
+);
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+@each $themeColour, $i in $themeColours {
+    body {
+        &.#{$themeColour} {
+            background-color: $i;
+            @if $themeColour == "pink" {
+            color: #000;
+            } @else if $themeColour == "red" {
+            color: #fff;
+            } @else {
+            color: #deedee;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,36 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: #4169e1;
+}
+
+body.pink {
+  background-color: #dc51ac;
+  color: #000;
+}
+
+body.red {
+  background-color: #d64651;
+  color: #fff;
+}
+
+body.orange {
+  background-color: #e55937;
+  color: #deedee;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */
